@@ -1,5 +1,4 @@
-def day1_1():
-    lines = open('day1_input.txt', 'r').read().split("\n")
+def day1_1(lines):
     increased_count = 0
     for i in range(len(lines) - 1):
         if int(lines[i + 1]) > int(lines[i]):
@@ -7,8 +6,7 @@ def day1_1():
     print(f"increased {increased_count} times with single steps")
 
 
-def day1_2():
-    lines = open('day1_input.txt', 'r').read().split("\n")
+def day1_2(lines):
     increased_count = 0
     for i in range(len(lines)):
         if i + 4 > len(lines):
@@ -19,5 +17,6 @@ def day1_2():
 
 
 if __name__ == '__main__':
-    day1_1()
-    day1_2()
+    line_input = open('./day1/day1_input.txt', 'r').read().split("\n")
+    day1_1(line_input)
+    day1_2(line_input)
