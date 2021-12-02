@@ -1,5 +1,5 @@
 def day1_1():
-    lines = open('measures.txt', 'r').read().split("\n")
+    lines = open('day1_input.txt', 'r').read().split("\n")
     increased_count = 0
     for i in range(len(lines) - 1):
         if int(lines[i + 1]) > int(lines[i]):
@@ -8,7 +8,7 @@ def day1_1():
 
 
 def day1_2():
-    lines = open('measures.txt', 'r').read().split("\n")
+    lines = open('day1_input.txt', 'r').read().split("\n")
     increased_count = 0
     for i in range(len(lines)):
         if i + 4 > len(lines):
